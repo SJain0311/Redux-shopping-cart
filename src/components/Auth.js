@@ -5,12 +5,12 @@ import { authActions } from "../store/auth-slice";
 import "./Auth.css";
 
 const Auth = () => {
-  const dispatch=useDispatch();
-  const handleSubmit=(e)=>
-  {
+  const dispatch = useDispatch();
+  
+  const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(authActions.login())
-  }
+    dispatch(authActions.login());
+  };
   return (
     <div className="container">
       <h1>Login</h1>{" "}
